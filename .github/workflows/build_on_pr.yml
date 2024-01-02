@@ -34,7 +34,7 @@ jobs:
 
       - name: Find the changed extension-related files
         id: find-extension-change
-        uses: tj-actions/changed-files@v35
+        uses: tj-actions/changed-files@v41
         with:
           base_sha: ${{ steps.locate-base-sha.outputs.baseSHA }}
           files: |
@@ -44,7 +44,7 @@ jobs:
 
       - name: Find the changed library-related files
         id: find-lib-change
-        uses: tj-actions/changed-files@v35
+        uses: tj-actions/changed-files@v41
         with:
           base_sha: ${{ steps.locate-base-sha.outputs.baseSHA }}
           files: |
